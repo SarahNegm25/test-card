@@ -1,0 +1,36 @@
+body{
+    background-color: beige;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 76%;
+    left: 46.5%;
+    color: black;
+    font-size:x-large;
+  }
+
+.btn{
+    width: 220px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: rgb(30, 194, 43);
+    font-size: large;
+    border: 0ch;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    align-self: center;
+  }
+
+.btn:hover {
+    background-color: rgb(14, 137, 156);
+}
