@@ -19,5 +19,19 @@
     <button id="1" class="btn">تحميل التميم كصورة</button>
     <script src="node_modules/html2canvas/dist/html2canvas.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.getElementById("1").onclick=function(){
+    const imagetarget= document.getElementById("image");
+
+    html2canvas(imagetarget).then((canvas)=>{
+        const base64image = canvas.toDataURL("image/png");
+        var anchor = document.createElement("a");
+        anchor.setAttribute("href",base64image);
+        anchor.setAttribute("download","تهنئة العيد.png");
+        anchor.click();
+        anchor.remove();
+    });
+};
+    </script>
 </body>
 </html>
